@@ -248,7 +248,8 @@ if [ "$ORIG_CPU_TARGET" = "" ]; then
   echo "[*] Testing the build..."
 
   cd ..
-
+  echo "[+] make make >/dev/null" 
+  pwd 
   make >/dev/null || exit 1
 
   cc test-instr.c -o test-instr || exit 1
